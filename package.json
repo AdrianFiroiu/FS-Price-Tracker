@@ -1,0 +1,17 @@
+{
+  "name": "FS-Price-Tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "jest": "^26.6.0",
+    "needle": "^2.5.2"
+  }
+}
