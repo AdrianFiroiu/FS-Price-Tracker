@@ -1,7 +1,7 @@
 const fs = require("fs");
 const parser = require("../parser");
 
-const productPage1HTML = fs.readFileSync("tests/html/productpage1.html");
+const productPage1HTML = fs.readFileSync("tests/html/test.html");
 
 let parserResult;
 
@@ -14,6 +14,6 @@ describe("Parsing the EMAG - full price - individual product page", () => {
         expect(parserResult.title).toBe("Telefon mobil OnePlus 8T, Dual SIM, 128GB, 8GB RAM, 5G, Lunar Silver");
     });
     test("EMAG - FP - Price", () => {
-        expect(parserResult.price).toBe("2.99999 Lei");
+        expect(parserResult.price).toBe("3.55000 Lei");
     });
 });

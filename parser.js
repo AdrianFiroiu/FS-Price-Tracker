@@ -10,5 +10,4 @@ function parseAll(html) {
     return { price, title }
 }
 
-
 module.exports = parseAll;
