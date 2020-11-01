@@ -1,9 +1,10 @@
 const needle = require("needle");
 const fs = require("fs");
-const validateURL = require("validateURL");
+const validateURL = require("./validateURL");
 
 async function getRequest (url) {
-    if (validateURL.validateURL(url)) {
+    const isValid = await validateURL.isValidURL(url);
+    if (isValid) {
         const result = await needle('get', url);
         return result.body;
     }

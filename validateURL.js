@@ -1,7 +1,7 @@
 const validURL = require('valid-url');
 
-async function validateURL(url) {
+function isValidURL(url) {
     return validURL.isUri(url) ? true : false;
 }
 
-module.exports = validateURL;
+module.exports = { isValidURL };
